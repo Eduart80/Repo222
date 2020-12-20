@@ -15,10 +15,10 @@ public class BasePage {
     public void enterField(By locator, String name){
         Web.getDriver().findElement(locator).sendKeys(name);
     }
-    public void dropDown(By locator, String Month){
+    public void dropDown(By locator, String DOB){
         WebElement at = Web.getDriver().findElement(locator);
-        Select sMonth = new Select(at);
-        sMonth.selectByValue(Month);
+        Select birthday = new Select(at);
+        birthday.selectByValue(DOB);
     }
     public void waitForMe(){
         Web.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
