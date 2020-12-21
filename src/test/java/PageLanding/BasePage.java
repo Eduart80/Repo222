@@ -35,5 +35,20 @@ public class BasePage {
         Select dropD = new Select(dropDown);
         dropD.selectByVisibleText(name);
     }
+    public void switchRadioButton(String name){
+        switch (name){
+            case "Female":
+                Web.getDriver().findElement(By.xpath("//input[@id='u_2_4']")).click();
+                break;
+            case "Male":
+                Web.getDriver().findElement(By.xpath("//input[@id='u_2_5']")).click();
+                break;
+            case "Custom":
+                Web.getDriver().findElement(By.xpath("//input[@id='u_2_6']")).click();
+                break;
+            default:
+                break;
+        }
+    }
 
 }

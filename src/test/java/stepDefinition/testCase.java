@@ -51,5 +51,12 @@ public class testCase {
         lp.sendSignUP();
     }
 
-
+/**
+ * Scenario Outline:
+ * Examples:
+ *       | invalidName   | invalidPassword |
+ *       | khanfight@gmail.com | 123456789 |
+ *       | totanKhamon@yahoo.com| 987654321|
+ *       | raGod@gmail.com     | 1q2w3e4r5t|
+ */
 }
